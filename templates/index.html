@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      display: flex;
+      min-height: 100vh; /* Set the minimum height of the container */
+      margin: 0;
+      padding: 0;
+    }
+
+    .div1 {
+      flex: 25%;
+      background-color: #0052CC;
+      color: white;
+      padding: 20px;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .div1 h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .div1 p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .div1 ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .div1 ul li {
+      margin-bottom: 10px;
+    }
+
+    .navbar {
+      background-color: #b3994c;
+      color: white;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .navbar .nav-link {
+      color: white; /* Change the color of navbar links */
+    }
+
+    .contact-detail {
+      position: sticky;
+      top: 55px; /* Add a top value to create space for the navbar */
+      z-index: 1;
+    }
+
+    .div2 {
+      flex: 80%;
+      background-color: #F4F6F8;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .about-me {
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    {% include 'basic-detail.html' %}
+    <div class="div2">
+      <nav class="navbar navbar-expand-lg">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/resume">Resume</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        </ul>
+      </nav>
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>I am a dedicated professional with a diverse background and experience in the field of analytics and data science. With a strong focus on financial analysis, planning, and decision-making, I have gained valuable insights and expertise throughout my career.</p>
+        <p>Before joining Swiggy as an analyst in the business finance team in April 2022, I worked at Flipkart in the operations department for six months, where I honed my analytical skills and contributed to optimizing operations and driving efficiency.</p>
+        <p>Prior to Flipkart, I was associated with OYO for two years and three months, working as an analyst. During my tenure, I developed a solid foundation in data analysis, market research, and strategic planning, collaborating with cross-functional teams to identify growth opportunities and contribute to the company's success.</p>
+        <p>I am passionate about leveraging data-driven insights to solve complex business challenges. I thrive in dynamic environments, constantly adapting to new technologies and staying ahead of industry trends. My commitment to excellence, attention to detail, and strong analytical skills empower me to deliver results that exceed expectations.</p>
+        <p>With my 4 years of experience in the field of analytics and data science, I am well-equipped to provide comprehensive business analysis and financial advisory services. I am driven by the goal of driving growth, optimizing operations, and delivering measurable value to my clients.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

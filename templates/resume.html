@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        .container {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* Set the minimum height of the container */
+        }
+
+        .div1 {
+            flex: 25%;
+            background-color: #0052CC;
+            color: white;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .div1 h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .div1 p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .div1 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .div1 ul li {
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            background-color: #b3994c;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            /* Change the color of navbar links */
+        }
+
+        .contact-detail {
+            position: sticky;
+            top: 55px;
+            /* Add a top value to create space for the navbar */
+            z-index: 1;
+        }
+
+        .div2 {
+            flex: 80%;
+            background-color: #F4F6F8;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .about-me {
+            margin-top: 1em;
+        }
+
+        .summary {
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+        }
+
+        .experience {
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+        }
+
+        .qualification {
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+        }
+
+        .skills {
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {% include 'basic-detail.html' %}
+        <div class="div2">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container_resume border-bottom">
+                <div class="row border-bottom">
+                    <div class="col-md-12 mt-4">
+                        <h2 class="border-bottom">Carrer Summary</h2>
+                        <!-- Add the download button -->
+                        <a href="/download" class="btn btn-primary">Download Resume</a>
+                        <p>
+                            Experienced professional with expertise in financial analysis, warehouse operations, and data-driven decision-making. Skilled in Python, data modeling, and forecasting, driving strategic growth. Demonstrated success in optimizing operations, reducing costs, and streamlining inventory management. Proficient in Google Data Studio, reporting, and stakeholder collaboration, enhancing operational efficiency. Committed to delivering results, automating tasks, and leveraging technology for impactful insights and operational excellence.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <h2 class="border-bottom">Experience</h2>
+                        <div class="border-bottom">
+                            <h5>Business Associate</h5>
+                            <span aria-hidden="true"><!---->
+                                <p> Bundle Tech Limited · Full-time </p><!---->
+                            </span>
+                            <span aria-hidden="true"><!---->
+                                <p> Apr 2022 - Present · 1 yr 4 mos </p><!---->
+                            </span>
+                            <span aria-hidden="true"><!---->
+                                <p> Bengaluru, Karnataka, India · Remote </p><!---->
+                            </span>
+
+                            <p>As a Business Associate (Analyst at Finance) in Swiggy's Business Finance department,
+                                I am responsible for analyzing and interpreting financial data to drive strategic
+                                decision-making and optimize business performance.
+                                With a strong background in financial analysis, data modeling, and forecasting, I
+                                provide actionable insights and recommendations to senior management,
+                                enabling them to make informed business decisions</p>
+                            <span aria-hidden="true"><strong><!---->Key Responsibilities:<!----></strong><span
+                                    class="white-space-pre"> </span>Financial analysis · Forecasting and budgeting ·
+                                Performance tracking . Data-driven insights<!----></span> <br><br>
+
+                            <span aria-hidden="true"><strong><!---->Skills:<!----></strong><span
+                                    class="white-space-pre"> </span>Python (Programming Language) · Snowflake ·
+                                Microsoft Excel · Statistical Data Analysis · Google Sheets · Automation<!----></span>
+                        </div> <br>
+                        <div class="border-bottom">
+                            <h5>Senior Executive</h5>
+                            <span aria-hidden="true"><!---->
+                                <p> Flipkart · Full-time </p><!---->
+                            </span>
+                            <span aria-hidden="true"><!---->
+                                <p> Sep 2021 - Apr 2022 · 8 mos </p><!---->
+                            </span>
+                            <span aria-hidden="true"><!---->
+                                <p> Lucknow, Uttar Pradesh, India · On-site </p><!---->
+                            </span>
+
+                            <p>As an Senior Executive (Analyst) supporting the Warehouse team at Flipkart, I play a
+                                vital role in optimizing operations, improving efficiency, and enhancing overall
+                                warehouse performance. Leveraging my analytical skills and domain knowledge, I
+                                contribute to streamlining processes, reducing costs, and ensuring seamless inventory
+                                management.
+                            </p>
+
+                            <span aria-hidden="true"><strong><!---->Key Responsibilities:<!----></strong><span
+                                    class="white-space-pre"> </span>Warehouse optimization · Data analysis · Inventory
+                                management · Process improvement initiatives<!----></span> <br><br>
+
+                            <span aria-hidden="true"><strong><!---->Skills:<!----></strong><span
+                                    class="white-space-pre"> </span>Google Data Studio · Reporting · Warehouse
+                                Operations · Python (Programming Language) · Microsoft Excel · Automation<!----></span>
+                        </div>
+
+                        <div class="border-bottom mt-4">
+                            <h5>Operations Executive</h5>
+                            <span aria-hidden="true"><!---->
+                                <p> Weavings Manpower Solutions Pvt.Ltd. · Full-time </p><!---->
+                            </span>
+                            <span aria-hidden="true"><!---->
+                                <p> Jun 2019 - Sep 2021 · 2 yrs 4 mos </p><!---->
+                            </span>
+                            <span aria-hidden="true"><!---->
+                                <p> Gurugram, Haryana, India · On-site </p><!---->
+                            </span>
+
+                            <p>As an Operation Executive at OYO, I am responsible for managing and optimizing the flow
+                                of information within the organization to support data-driven decision-making and
+                                operational efficiency. With expertise in data analysis, reporting, and system
+                                management, I contribute to improving business processes, enhancing productivity, and
+                                driving strategic initiatives.
+                            </p>
+
+                            <span aria-hidden="true"><strong><!---->Key Responsibilities:<!----></strong><span
+                                    class="white-space-pre"> </span>Data management and analysis · Reporting and
+                                dashboard creation ·
+                                Process improvement . Stakeholder collaboration<!----></span> <br><br>
+
+                            <span aria-hidden="true"><strong><!---->Skills:<!----></strong><span
+                                    class="white-space-pre"> </span>PostgreSQL · Hotel Operation · stakeholder
+                                collaboration · Google Sheets · Python (Programming Language) · Microsoft Excel ·
+                                Automation<!----></span>
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <h2 class="border-bottom">Skills</h2>
+                        {% include 'skills.html' %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-4">
+                        <h2 class="border-bottom">Education</h2>
+                        {% include 'education.html' %}
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        </div>
+    </div>
+</body>
+
+</html>
